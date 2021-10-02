@@ -39,7 +39,7 @@
     justify-content: space-evenly;
 }
 #body .serviciosContainer .services .subtitle{
-    font-size: 35px;
+    font-size: 33px;
     color: #fff;
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@
     right: 2%; 
     top:51%;
     background-color: rgb(194, 194, 194);
-    width: 30%;
+    width: 25%;
     height: 1px;
 }
 #body .serviciosContainer .services .subtitle::after{
@@ -68,6 +68,17 @@
     left: 2%;
     top:51%;
     background-color: rgb(194, 194, 194);
-    width: 30%;
+    width: 25%;
     height: 1px;
+}
+
+@media (max-width:800px){
+    #body .serviciosContainer .services .subtitle::before{
+        content: none;
+        
+    }
+    #body .serviciosContainer .services .subtitle::after{
+        content: none;
+        
+    }
 }

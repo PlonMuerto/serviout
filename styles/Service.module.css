@@ -15,20 +15,21 @@
 #service .container .title{
     margin:50px 0;
     width: 100%;
-    font-size: 40px;
+    font-size: 35px;
     color:crimson;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 3px;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 #service .container .data{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 30px 0;
     justify-content: space-around;
     align-items: flex-start;
 }
@@ -37,8 +38,9 @@
     width: 44%;
     margin:20px 0;
 }
+
 #service .container .data .text{
-    min-width: 180px;
+    min-width: 200px;
     width: 40%;
     margin:20px 0;
     color: #222;
@@ -47,11 +49,19 @@
     justify-content: space-evenly;
     align-items: center;
 }
+@media (max-width:1000px){
+    #service .container .data .image{
+        width: 90%;
+    }
+    
+    #service .container .data .text{
+        width: 90%;
+    }
+}
 #service .container .data .text .desc{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 300;
     color: rgb(230, 230, 230);
-    text-align: justify;
 }
 #service .container .data .text .details{
     width: 100%;
@@ -60,15 +70,17 @@
     flex-direction: column;
 }
 #service .container .data .text .details .detailsTitle{
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 600;
+    color: crimson;
 }
 #service .container .data .text .details .detail{
-    font-size: 16px;
-    margin:5px 0;
+    font-size: 15px;
+
+    border-bottom: 2px solid #222;
+    color: rgb(224, 228, 227);
+    margin:3px 0;
     padding: 5px 2px;
-    border-top: .5px solid rgb(118, 118, 118);
-    /*border-bottom: .5px solid rgb(118, 118, 118);*/
     box-sizing: border-box;
 
 }
